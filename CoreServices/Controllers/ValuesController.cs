@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CoreServices.Controllers
 {
     [Route("api/[controller]")]
-    //[Route("api/[controller]/[action]")]
+    //[Route("api/[controller]/[action]")] uncomment to run two get method from same project
     [ApiController]
     public class ValuesController : ControllerBase
     {
