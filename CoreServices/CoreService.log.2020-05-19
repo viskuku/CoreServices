@@ -1,0 +1,156 @@
+2020-05-19 15:04:50,653  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-19 15:04:55,583  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-19 15:04:56,919  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-19 15:04:56,919  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:05:00,807  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 3883.1874ms 200 
+ 2020-05-19 15:05:01,375 ERROR Microsoft.AspNetCore.Mvc.Internal.ActionSelector.? [?] - MESSAGE: Request matched multiple actions resulting in ambiguity. Matching actions: CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.Get (CoreServices)
+ 2020-05-19 15:05:01,641 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.Get (CoreServices)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at CoreServices.Middleware.ClientConfigurationMiddleware.InvokeAsync(HttpContext httpContext, IClientConfiguration clientConfiguration) in C:\Users\Ashwa\source\repos\CoreServices\CoreServices\Middleware\ClientConfigurationMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-19 15:05:01,830  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 4869.899ms 500 text/html; charset=utf-8
+ 2020-05-19 15:05:02,067  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/favicon.ico  
+ 2020-05-19 15:05:07,484  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5416.4459ms 404 
+ 2020-05-19 15:06:17,263  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-19 15:06:19,407  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-19 15:06:20,198  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:06:20,198  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-19 15:06:26,218  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 6016.638ms 200 
+ 2020-05-19 15:06:26,739 ERROR Microsoft.AspNetCore.Mvc.Internal.ActionSelector.? [?] - MESSAGE: Request matched multiple actions resulting in ambiguity. Matching actions: CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.GetValue (CoreServices)
+ 2020-05-19 15:06:26,809 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.GetValue (CoreServices)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at CoreServices.Middleware.ClientConfigurationMiddleware.InvokeAsync(HttpContext httpContext, IClientConfiguration clientConfiguration) in C:\Users\Ashwa\source\repos\CoreServices\CoreServices\Middleware\ClientConfigurationMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-19 15:06:26,873  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 6683.6971ms 500 text/html; charset=utf-8
+ 2020-05-19 15:07:28,333  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-19 15:07:30,598  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-19 15:07:31,436  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-19 15:07:31,436  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:07:36,576  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5145.6385ms 200 
+ 2020-05-19 15:07:36,936  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:07:36,955  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:07:36,965  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8086ms.
+ 2020-05-19 15:07:36,980  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:07:37,100  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 156.1713ms
+ 2020-05-19 15:07:37,111  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5686.1908ms 200 application/json; charset=utf-8
+ 2020-05-19 15:10:36,076  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:10:41,244  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:10:41,258  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:10:41,273  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4027ms.
+ 2020-05-19 15:10:41,289  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:10:41,305  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 47.0155ms
+ 2020-05-19 15:10:41,322  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5240.3138ms 200 application/json; charset=utf-8
+ 2020-05-19 15:10:59,998  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:11:03,073  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:11:03,088  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:11:03,103  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0254ms.
+ 2020-05-19 15:11:03,119  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:11:03,134  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 46.3563ms
+ 2020-05-19 15:11:03,158  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 3146.2056ms 200 application/json; charset=utf-8
+ 2020-05-19 15:11:31,399  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:11:44,519  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:11:44,532  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:11:44,546  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0214ms.
+ 2020-05-19 15:11:44,561  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:11:44,579  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 42.9481ms
+ 2020-05-19 15:11:44,588  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 13187.3302ms 200 application/json; charset=utf-8
+ 2020-05-19 15:11:49,398  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:11:49,406  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:11:49,411  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:11:49,417  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0113ms.
+ 2020-05-19 15:11:49,423  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:11:49,428  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 16.8859ms
+ 2020-05-19 15:11:49,435  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 35.7476ms 200 application/json; charset=utf-8
+ 2020-05-19 15:11:56,475  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:11:56,484  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:11:56,492  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:11:56,498  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.0128ms.
+ 2020-05-19 15:11:56,504  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:11:56,509  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 19.313ms
+ 2020-05-19 15:11:56,516  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 41.5184ms 200 application/json; charset=utf-8
+ 2020-05-19 15:15:36,187  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-19 15:15:38,536  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-19 15:15:39,473  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-19 15:15:39,473  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:15:39,542  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 79.3562ms 200 
+ 2020-05-19 15:15:39,944 ERROR Microsoft.AspNetCore.Mvc.Internal.ActionSelector.? [?] - MESSAGE: Request matched multiple actions resulting in ambiguity. Matching actions: CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.GetValue (CoreServices)
+ 2020-05-19 15:15:40,094 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.GetValue (CoreServices)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at CoreServices.Middleware.ClientConfigurationMiddleware.InvokeAsync(HttpContext httpContext, IClientConfiguration clientConfiguration) in C:\Users\Ashwa\source\repos\CoreServices\CoreServices\Middleware\ClientConfigurationMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-19 15:15:40,163  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 701.661ms 500 text/html; charset=utf-8
+ 2020-05-19 15:15:44,338  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:15:44,345 ERROR Microsoft.AspNetCore.Mvc.Internal.ActionSelector.? [?] - MESSAGE: Request matched multiple actions resulting in ambiguity. Matching actions: CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.GetValue (CoreServices)
+ 2020-05-19 15:15:44,403 ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.? [?] - MESSAGE: An unhandled exception has occurred while executing the request.
+ Microsoft.AspNetCore.Mvc.Internal.AmbiguousActionException: Multiple actions matched. The following actions matched route data and had all constraints satisfied:
+
+CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices)
+CoreServices.Controllers.ValuesController.GetValue (CoreServices)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionSelector.SelectBestCandidate(RouteContext context, IReadOnlyList`1 candidates)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.Tree.TreeRouter.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at CoreServices.Middleware.ClientConfigurationMiddleware.InvokeAsync(HttpContext httpContext, IClientConfiguration clientConfiguration) in C:\Users\Ashwa\source\repos\CoreServices\CoreServices\Middleware\ClientConfigurationMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-19 15:15:44,424  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 85.2006ms 500 text/html; charset=utf-8
+ 2020-05-19 15:20:58,324  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-19 15:20:59,848  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-19 15:21:00,464  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-19 15:21:00,464  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:21:00,502  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 43.0653ms 200 
+ 2020-05-19 15:21:00,741  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 281.7473ms 404 
+ 2020-05-19 15:21:07,137  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-19 15:21:07,143  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 14.4248ms 404 
+ 2020-05-19 15:21:27,260  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values/ClientConfig  
+ 2020-05-19 15:21:27,311  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "ClientConfig", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[CoreServices.Configuration.ClientConfiguration] GetClientConfig() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-19 15:21:27,329  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) - Validation state: Valid
+ 2020-05-19 15:21:27,337  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.8338ms.
+ 2020-05-19 15:21:27,355  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.Configuration.ClientConfiguration'.
+ 2020-05-19 15:21:27,482  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.GetClientConfig (CoreServices) in 160.5314ms
+ 2020-05-19 15:21:27,493  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 232.4811ms 200 application/json; charset=utf-8
+ 

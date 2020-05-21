@@ -1,0 +1,51 @@
+2020-05-18 18:29:00,701  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-18 18:29:02,838  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-18 18:29:03,706  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-18 18:29:03,706  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-18 18:29:08,751  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5038.4902ms 200 
+ 2020-05-18 18:29:09,082  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-18 18:29:09,099  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.Get (CoreServices) - Validation state: Valid
+ 2020-05-18 18:29:09,109  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.Get (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.6552ms.
+ 2020-05-18 18:29:09,125  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'System.String[]'.
+ 2020-05-18 18:29:09,210  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.Get (CoreServices) in 118.0058ms
+ 2020-05-18 18:29:09,221  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5523.5973ms 200 application/json; charset=utf-8
+ 2020-05-18 18:29:17,580  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/post/GetPost?postId=1 application/json 
+ 2020-05-18 18:29:37,648  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "GetPost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPost(System.Nullable`1[System.Int32]) on controller CoreServices.Controllers.PostController (CoreServices).
+ 2020-05-18 18:29:38,089  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.PostController.GetPost (CoreServices) - Validation state: Valid
+ 2020-05-18 18:29:45,869  INFO CoreServices.Controllers.PostController.? [?] - MESSAGE: GetPost
+ 2020-05-18 18:29:46,966  INFO Microsoft.EntityFrameworkCore.Infrastructure.? [?] - MESSAGE: Entity Framework Core 2.1.14-servicing-32113 initialized 'BlogDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+ 2020-05-18 18:29:48,074  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (274ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[POST_ID] AS [PostId], [p].[TITLE], [p].[DESCRIPTION], [p].[CATEGORY_ID] AS [CategoryId], [c].[NAME] AS [CategoryName], [p].[CREATED_DATE] AS [CreatedDate]
+FROM [Post] AS [p]
+CROSS JOIN [Category] AS [c]
+WHERE [p].[POST_ID] = @__postId_0
+ 2020-05-18 18:29:48,172  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.PostController.GetPost (CoreServices), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10077.7202ms.
+ 2020-05-18 18:29:48,181  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'CoreServices.ViewModel.PostViewModel'.
+ 2020-05-18 18:29:48,212  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.PostController.GetPost (CoreServices) in 10552.4921ms
+ 2020-05-18 18:29:48,238  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 30660.8836ms 200 application/json; charset=utf-8
+ 2020-05-18 18:31:09,384  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 POST http://localhost:44366/api/post/UpdatePost application/json 223
+ 2020-05-18 18:33:59,050  INFO CoreServices.Program.? [?] - MESSAGE: Application - Main is invoked
+ 2020-05-18 18:34:01,239  INFO CoreServices.Startup.? [?] - MESSAGE: Startup Invoked
+ 2020-05-18 18:34:01,976  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 GET http://localhost:44366/api/values  
+ 2020-05-18 18:34:01,976  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 DEBUG http://localhost:49834/  0
+ 2020-05-18 18:34:07,383  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5391.3096ms 200 
+ 2020-05-18 18:34:07,727  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get() on controller CoreServices.Controllers.ValuesController (CoreServices).
+ 2020-05-18 18:34:07,746  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executing action method CoreServices.Controllers.ValuesController.Get (CoreServices) - Validation state: Valid
+ 2020-05-18 18:34:07,755  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action method CoreServices.Controllers.ValuesController.Get (CoreServices), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.7775ms.
+ 2020-05-18 18:34:07,771  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'System.String[]'.
+ 2020-05-18 18:34:07,849  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.ValuesController.Get (CoreServices) in 113.3298ms
+ 2020-05-18 18:34:07,863  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 5890.4828ms 200 application/json; charset=utf-8
+ 2020-05-18 18:34:16,089  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request starting HTTP/1.1 POST http://localhost:44366/api/post/UpdatePost application/json 223
+ 2020-05-18 18:34:24,255  INFO CoreServices.Middleware.RequestLoggerMiddleware.? [?] - MESSAGE:  {
+        "postId": 1,
+        "title": "AshwaniTitle",
+        "description": " Welcome Title 1",
+        "categoryId": 2,
+        "createdDate": "2020-05-13T00:00:00",
+        "categoryName": "VISUAL STUDIO"
+    }
+ 2020-05-18 18:34:25,573  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Route matched with {action = "UpdatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePost(CoreServices.Models.Post) on controller CoreServices.Controllers.PostController (CoreServices).
+ 2020-05-18 18:34:25,864  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.? [?] - MESSAGE: Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+ 2020-05-18 18:34:25,872  INFO Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.? [?] - MESSAGE: Executed action CoreServices.Controllers.PostController.UpdatePost (CoreServices) in 293.7609ms
+ 2020-05-18 18:34:25,880  INFO Microsoft.AspNetCore.Hosting.Internal.WebHost.? [?] - MESSAGE: Request finished in 9797.0331ms 400 application/json; charset=utf-8
+ 
